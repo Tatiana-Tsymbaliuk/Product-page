@@ -1,68 +1,154 @@
-.foto {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-          Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        line-height: 1.5;
-        background-color: #fff;
-        color: #2f2f37;
-        max-width: 960px;
-        padding: 16px;
-      }
+// .foto-gallary {
+//   width: 652px;
+//   height: 522px;
+// }
+* {
+  box-sizing: border-box;
+}
 
-      .foto code {
-        font-family: monospace;
-        font-size: 16px;
-        font-weight: 700;
-        background-color: #37ff0a;
-        color: #fff;
-        padding: 2px 6px;
-        border-radius: 2px;
-      }
-      
-      .foto .background {
-        height: 240px;
-        // ❗️❗️❗️ The path to images from a SASS file
-        // is always the same as from the css folder.
-        // background-image: url('../images/logo.png');
-        background-size: cover;
-        background-position: center;
-      }
-      .slider-container {
-        position: relative;
-        max-width: 600px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-    
-    .slider {
-        display: flex;
-    }
-    
-    .slide {
-        flex: 0 0 100%;
-    }
-    
-    // img {
-    //     width: 100%;
-    //     height: auto;
-    // }
-    
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-        z-index: 100;
-    }
-    
-    .prev {
-        left: 0;
-    }
-    
-    .next {
-        right: 0;
-    }
-     
+/* Position the image container (needed to position the left and right arrows) */
+.container-gallery {
+  position: relative;
+  width: 652px;
+  top: 92px;
+
+  // @media screen and (min-width: 360px) {
+  //   width: 360px;
+  //   padding-left: 5px;
+  //   padding-right: 5px;
+  // }
+  
+}
+
+.big-slide{
+  border: solid 1px rgb(212, 230, 231);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev-slide,
+.next-slide {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  position: absolute;
+  top: 85%;
+  border: none;
+  margin-top: -75px;
+  background-color: rgb(242, 245, 245,);
+  color: rgb(12, 11, 11);
+  padding: 11px 14px 11px 14px;
+  border-radius: 8px;
+  user-select: none;
+  font-weight: 500;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+/* Position the "next button" to the right */
+.next-slide {
+  right: 15px;
+  
+}
+
+.prev-slide {
+ right: 71px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-slide:hover,
+.next-slide:hover {
+  color: white;
+  background-color: rgba(184, 187, 187, 0.8);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #131111;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: left;
+  position: absolute;
+  top: 75%;
+  margin-left: 15px;
+  padding: 5px;
+  color: rgb(174, 187, 191);
+}
+
+.row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+.row {
+  display: flex;
+}
+
+.prev-row,
+.next-row {
+  width: 32px;
+  height: 72px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(242, 245, 245,);
+  color: rgb(12, 11, 11);
+  padding: 11px 14px 11px 14px;
+  border-radius: 8px;
+  user-select: none;
+  font-weight: 500;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.prev-row {
+  margin-right: 8px;
+}
+
+.prev-row:hover,
+.next-row:hover {
+  color: white;
+  background-color: rgba(184, 187, 187, 0.8);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 108px;
+  height: 72px;
+  margin-right: 8px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  border: solid 1px rgb(212, 230, 231);
+  border-radius: 8px;
+  
+}
+
+.active,
+.demo:hover {
+  border: solid 1px rgb(20, 107, 135);
+  border-radius: 8px;
+}

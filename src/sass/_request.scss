@@ -1,0 +1,123 @@
+.request-conteiner {
+        width: 304px;
+        
+        margin-left: 44px;
+        margin-top: 51px;
+        background: rgb(214, 220, 221);
+        padding: 20px;
+        border-radius: 8px;
+}
+.request-model {
+        font-weight: 900;
+        font-size: 16px;
+        text-transform: uppercase;
+        color:rgb(4, 42, 48);
+        margin-top: 0px;
+        margin-bottom: 12px;
+}
+.request-model_sku {
+        color: rgb(156, 160, 160);
+        margin-right: 5px;
+}
+
+.request-upon_button {
+        font-weight: 900;
+        font-size: 10px;
+        text-transform: uppercase;
+        padding: 12px;
+        color: white;
+        background: rgb(4, 42, 48);
+        border-radius: 8px;
+        border: none;
+        margin-bottom: 12px;
+        cursor: pointer;
+}
+
+.request-read_button {
+        font-weight: 900;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        background: rgb(236, 165, 134);
+        width: 264px;
+        margin-bottom: 34px;
+        cursor: pointer;
+         
+}
+
+.request-header {
+        border-bottom: 1px solid rgb(143, 138, 138);  
+}
+
+.request-price{
+        font-weight: 900;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: rgb(20, 107, 135);
+        margin-top: 35px;
+        margin-bottom: 27px;
+              
+}
+
+.request-price-from {
+        font-weight: 900;
+        font-size: 10px;
+        text-transform: uppercase; 
+        color:rgb(156, 160, 160);
+        margin-right: 8px;    
+}
+
+.request-price-ea {
+        font-weight: 900;
+        font-size: 10px;
+        text-transform: uppercase; 
+        color:rgb(20, 107, 135); 
+        margin-left: 8px;     
+}
+
+.request-counter {
+        margin-bottom: 24px;
+        width: 264px;
+}
+
+.request-counter_data {
+padding: 12px 70px 12px 70px;
+border-radius: 8px;
+background-color: rgb(242, 245, 245,);
+border: solid 1px rgb(180, 185, 185);
+margin-left: 8px;
+margin-right: 8px;
+}
+
+.request-counter_button {
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        border: none;
+        background-color: rgb(242, 245, 245,);
+        cursor: pointer;
+}
+
+.request-button {
+        font-weight: 900;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        background: rgb(228, 109, 58);
+        width: 264px; 
+        margin-bottom: 24px;
+        cursor: pointer;
+          
+}
+
+.request-price_final {
+        font-weight: 300;
+        font-size: 12px;
+        color:rgb(156, 160, 160);
+        margin: 0;
+}

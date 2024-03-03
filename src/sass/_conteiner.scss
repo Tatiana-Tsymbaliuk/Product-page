@@ -1,0 +1,17 @@
+.conteiner {
+        // padding-left: 280px;
+        // padding-right: 280px;
+        margin-left: 280px;
+        margin-right: 280px;
+        display: flex;
+
+        @media screen and (min-width: 360px) {
+                width: 360px;
+              }
+
+        @media screen and (max-width: 1920px) {
+                // background-color: var(--color-background);
+                width: 1920px;
+               
+              }
+      }
