@@ -7,31 +7,37 @@
 
       <section class="foto-gallery" id="en">
         <!-- Container for the image gallery -->
+        
 <div class="container-gallery">
   <div class="big-slide">
+    <button class="big-slide_zoom js-open-modal" data-modal="4">
+      <svg class="big-slide_icon" width="16" height="16">
+        <use href="./image/icons.svg#icon-Check"></use>
+      </svg>
+    </button>
   <!-- Full-width images with number text -->
   <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
+    <div class="numbertext">1 / 5</div>
       <img src="./image/image1.png" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
+    <div class="numbertext">2 / 5</div>
       <img src="./image/image2.png" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
+    <div class="numbertext">3 / 5</div>
       <img src="./image/image3.png" style="width:100%">
   </div>
 
  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
+    <div class="numbertext">4 / 5</div>
       <img src="./image/image4.png" style="width:100%">
   </div>
-  
+
   <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
+    <div class="numbertext">5 / 5</div>
       <img src="./image/image5.png" style="width:100%">
   </div>
 </div>
@@ -52,28 +58,30 @@
   </div>
 
   <!-- Thumbnail images -->
-  <div class="row">
+<div>
+  <ul class="row">
     <div><button class="prev-row" onclick="plusSlides(-1)">&#10094;</button></div>
-    <div class="column">
+    <li class="list column">
       <img class="demo cursor" src="./image/image1.png" style="width:100%" onclick="currentSlide(1)" alt="Picture shows conveyor with optional structures amd features">
-    </div>
-    <div class="column">
+    </li>
+    <li class="list column">
       <img class="demo cursor" src="./image/image2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-    </div>
-    <div class="column">
+    </li>
+    <li class="list column">
       <img class="demo cursor" src="./image/image3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
+    </li>
+    <li class="list column">
       <img class="demo cursor" src="./image/image4.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
+    </li>
+    <li class="list column">
       <img class="demo cursor" src="./image/image5.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>
+    </li>
     <!-- <div class="column">
       <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
     </div> -->
     <div><button class="next-row" onclick="plusSlides(1)">&#10095;</button></div>
-  </div>
+  </ul>
+</div>
   
 </div>
       </section> 

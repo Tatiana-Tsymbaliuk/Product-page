@@ -3,6 +3,29 @@
         margin-left: 44px;
         
 }
+.sizes-conveyors_info {
+        // position: absolute;
+        border: none;
+        display: flex;
+        background-color: transparent;
+        cursor: pointer;
+        border-radius: 50%;
+        margin-top: 15px;
+}
+
+.sizes-conveyors_icon {
+        fill: currentColor;
+        margin-left: 8px;
+}
+.sizes-conveyors_icon:hover,
+.sizes-conveyors_icon:focus {
+        fill: rgb(20, 107, 135);  
+}
+.size-conveyors_text {
+        display: flex;
+
+}
+      
 
 .sizes-conveyors_block {
         display: flex;
@@ -19,6 +42,7 @@ margin-bottom: 0;
         margin-bottom: 32px;
 }
 .sizes-conveyors_width_button{
+        width: 48px;
         font-weight: 900;
         border-radius: 8px;
         border: none;
@@ -102,12 +126,22 @@ margin-bottom: 0;
 }
 
 .sizes-conveyors_checkbox {
+        position: relative;
         display: flex;
         width: 316px;
         border-radius: 8px;
         padding: 12px;
         background-color: rgb(224, 240, 240);
         margin-bottom: 4px;
+}
+.sizes-conveyors_checkbox_info {
+        position: absolute;
+        border: none;
+        display: flex;
+        background-color: transparent;
+        cursor: pointer;
+        border-radius: 50%;
+        margin-left: 272px;
 }
 
 .sizes-conveyors_input {
