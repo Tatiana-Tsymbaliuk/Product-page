@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Product page</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <main>
-      <section class="conteiner">
+    <main class="conteiner">
     <include src="./partials/foto-gallery.html"></include>
     <include src="./partials/sizes-conveyors.html"></include> 
-  </section>
+    <include src="./partials/modal-info.html"></include> 
     </main>
     <script defer src="./js/foto-gallery.js"></script>
-    <script src="./js/request.js" type="module"></script>
+    <script defer src="./js/request.js"></script>
+    <script defer src="./js/modal-info.js"></script>
   </body>
 </html>

@@ -1,10 +1,14 @@
 .sizes-conveyors_conteiner {
         width: 316px;
         margin-left: 44px;
+        @media screen and (max-width: 360px) {
+                width: 284px;
+                margin-top: 40px;
+                margin-left: 0;
+              }
         
 }
 .sizes-conveyors_info {
-        // position: absolute;
         border: none;
         display: flex;
         background-color: transparent;
@@ -15,20 +19,25 @@
 
 .sizes-conveyors_icon {
         fill: currentColor;
-        margin-left: 8px;
+        
 }
 .sizes-conveyors_icon:hover,
 .sizes-conveyors_icon:focus {
         fill: rgb(20, 107, 135);  
 }
-.size-conveyors_text {
+.size-conveyors_text {      
         display: flex;
-
 }
       
 
 .sizes-conveyors_block {
-        display: flex;
+        display: block;
+
+
+        @media screen and (min-width: 1200px) {
+        
+                display: flex;
+              }
 }
 
 .sizes-conveyors_title {
@@ -36,6 +45,10 @@ font-size: 40px;
 margin-left: 44px;
 margin-top: 92px;
 margin-bottom: 0;
+
+@media screen and (max-width: 360px) {
+        display: none;
+      }
 }
 
 .sizes-conveyors_width{
@@ -121,7 +134,11 @@ margin-bottom: 0;
 
 .sizes-conveyors_add{
         display: flex;
-        flex-direction: column;  
+        flex-direction: column; 
+
+        @media screen and (max-width: 360px) {
+                display: none;
+              } 
         
 }
 

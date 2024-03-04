@@ -1,11 +1,15 @@
 .request-conteiner {
         width: 304px;
-        
         margin-left: 44px;
         margin-top: 51px;
         background: rgb(214, 220, 221);
         padding: 20px;
         border-radius: 8px;
+        @media screen and (max-width: 360px) {
+                width: 100%;
+                margin: 0;
+                margin-top: 40px;
+              }
 }
 .request-model {
         font-weight: 900;
@@ -19,6 +23,12 @@
         color: rgb(156, 160, 160);
         margin-right: 5px;
 }
+.request-button-group {
+
+        @media screen and (max-width: 360px) {
+                display: flex;
+              }
+}
 
 .request-upon_button {
         font-weight: 900;
@@ -31,6 +41,9 @@
         border: none;
         margin-bottom: 12px;
         cursor: pointer;
+        @media screen and (max-width: 360px) {
+                width: 125px;
+              }
 }
 
 .request-read_button {
@@ -44,11 +57,14 @@
         width: 264px;
         margin-bottom: 34px;
         cursor: pointer;
+        @media screen and (max-width: 360px) {
+                width: 183px;
+              }
          
 }
 
 .request-header {
-        border-bottom: 1px solid rgb(143, 138, 138);  
+        border-bottom: 1px solid rgb(159, 153, 153);  
 }
 
 .request-price{
