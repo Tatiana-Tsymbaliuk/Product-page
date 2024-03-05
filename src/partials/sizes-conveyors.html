@@ -1,87 +1,200 @@
 <section>
-        <h1 class="sizes-conveyors_title">Incline & Decline Conveyors</h1>
-         <div class="sizes-conveyors_block"> 
-        <div class="sizes-conveyors_conteiner">    
-                <div class="size-conveyors_text">
-                        <p>Conveyor Belt Width, in</p>  
-                <button class="sizes-conveyors_info open-modal">
-                        <svg class="sizes-conveyors_icon" width="16" height="16">
-                          <use href="./image/icons.svg#icon-info_circle"></use>
-                        </svg>
-                      </button></div>
-                <ul class="list sizes-conveyors_width_select">
-                        <li><button class="sizes-conveyors_width_button">10"</button></li>
-                        <li><button class="sizes-conveyors_width_button">18"</button></li>
-                        <li><button class="sizes-conveyors_width_button">24"</button></li>
-                        <li><button class="sizes-conveyors_width_button">30"</button></li>
-                        <li><button class="sizes-conveyors_width_button">36"</button></li>
-                        <li><button class="sizes-conveyors_width_button">42"</button></li>
-                        <li><button class="sizes-conveyors_width_button">48"</button></li>
-                        <li><button class="sizes-conveyors_width_button">54"</button></li>
-                        <li><button class="sizes-conveyors_width_button_custom" id="add-width" >CUSTOM</button></li>
-                </ul>
-                <ul class="list sizes-conveyors_width_select">
-                        <li><button class="sizes-conveyors_width_add">&#10094;</button></li>
-                        <li><span class="sizes-conveyors_width_data" id="value">1"</span></li>
-                        <li><button class="sizes-conveyors_width_add">&#10095;</button></li>
-                </ul>
-        <div class="sizes-conveyors_width">
-                <div class="size-conveyors_text">
-                        <p>Bed Section Length, in</p>
-                <button class="sizes-conveyors_info open-modal">
-                        <svg class="sizes-conveyors_icon" width="16" height="16">
-                          <use href="./image/icons.svg#icon-info_circle"></use>
-                        </svg>
-                      </button>
-                      </div>
-                <ul class="list sizes-conveyors_width_select">
-                        <li><button class="sizes-conveyors_width_add">&#10094;</button></li>
-                        <li><span class="sizes-conveyors_width_data" id="value">10"</span></li>
-                        <li><button class="sizes-conveyors_width_add">&#10095;</button></li>
-                </ul>
+  <h1 class="sizes-conveyors-title">Incline & Decline Conveyors</h1>
+  <div class="sizes-conveyors-block">
+    <div class="sizes-conveyors-conteiner">
+      <div class="size-conveyors-text">
+        <p>Conveyor Belt Width, in</p>
+        <button class="sizes-conveyors-info open-modal">
+          <svg class="sizes-conveyors-icon" width="16" height="16">
+            <use href="./image/icons.svg#icon-info_circle"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="list sizes-conveyors-width-select">
+        <li><button class="sizes-conveyors-width-button">10"</button></li>
+        <li><button class="sizes-conveyors-width-button">18"</button></li>
+        <li><button class="sizes-conveyors-width-button">24"</button></li>
+        <li><button class="sizes-conveyors-width-button">30"</button></li>
+        <li><button class="sizes-conveyors-width-button">36"</button></li>
+        <li><button class="sizes-conveyors-width-button">42"</button></li>
+        <li><button class="sizes-conveyors-width-button">48"</button></li>
+        <li><button class="sizes-conveyors-width-button">54"</button></li>
+        <li>
+          <button
+            class="sizes-conveyors-width-button-custom"
+            id="showSectionButton"
+          >
+            CUSTOM
+          </button>
+        </li>
+      </ul>
+      <ul
+        class="list sizes-conveyors-width-plus is-hidden"
+        id="additionalSection"
+      >
+        <li>
+          <button class="sizes-conveyors-width-add">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 1L4.70711 7.29289C4.31658 7.68342 4.31658 8.31658 4.70711 8.70711L11 15"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </li>
+        <li><span class="sizes-conveyors-width-data" id="value">1"</span></li>
+        <li>
+          <button class="sizes-conveyors-width-add">
+            <svg
+              class="request-read-icon-rigth"
+              width="16"
+              height="16"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.75 0.75L8.29289 5.29289C8.68342 5.68342 8.68342 6.31658 8.29289 6.70711L3.75 11.25"
+                stroke="#042A30"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <div class="sizes-conveyors-width">
+        <div class="size-conveyors-bed-text">
+          <p>Bed Section Length, in</p>
+          <button class="sizes-conveyors-info open-modal">
+            <svg class="sizes-conveyors-icon" width="16" height="16">
+              <use href="./image/icons.svg#icon-info_circle"></use>
+            </svg>
+          </button>
         </div>
-        <div class="sizes-conveyors_add">
-                <form class="list ">
-                        <label class="sizes-conveyors_checkbox">
-                          <input class="sizes-conveyors_input" type="checkbox" name="add" value="Chain Driven Feeder" />
-                              Chain Driven Feeder 
-                              <button class="sizes-conveyors_checkbox_info js-open-modal" data-modal="4">
-                                <svg class="sizes-conveyors_icon" width="16" height="16">
-                                  <use href="./image/icons.svg#icon-info_circle"></use>
-                                </svg>
-                              </button>
-                        </label>
-                        <label class="sizes-conveyors_checkbox">
-                          <input class="sizes-conveyors_input" type="checkbox" name="add" value="Additional Support Structures" />
-                              Additional Support Structures
-                              <button class="sizes-conveyors_checkbox_info js-open-modal" data-modal="4">
-                                <svg class="sizes-conveyors_icon" width="16" height="16">
-                                  <use href="./image/icons.svg#icon-info_circle"></use>
-                                </svg>
-                              </button>
-                        </label>
-                        <label class="sizes-conveyors_checkbox">
-                          <input class="sizes-conveyors_input" type="checkbox" name="add" value="Knee Braces" />
-                            Knee Braces
-                            <button class="sizes-conveyors_checkbox_info js-open-modal" data-modal="4">
-                                <svg class="sizes-conveyors_icon" width="16" height="16">
-                                  <use href="./image/icons.svg#icon-info_circle"></use>
-                                </svg>
-                              </button>
-                        </label>
-                        <label class="sizes-conveyors_checkbox">
-                          <input class="sizes-conveyors_input" type="checkbox" name="add" value="Enhanced support" />
-                            Enhanced support
-                            <button class="sizes-conveyors_checkbox_info js-open-modal" data-modal="4">
-                                <svg class="sizes-conveyors_icon" width="16" height="16">
-                                  <use href="./image/icons.svg#icon-info_circle"></use>
-                                </svg>
-                              </button>
-                        </label>
-                      </form>
-        </div>       
-</div>
-<include src="./partials/request.html"></include>
-</div>
-
+        <ul class="list sizes-conveyors-width-plus">
+          <li>
+            <button class="sizes-conveyors-width-add">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1L4.70711 7.29289C4.31658 7.68342 4.31658 8.31658 4.70711 8.70711L11 15"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <span class="sizes-conveyors-width-data" id="value">10"</span>
+          </li>
+          <li>
+            <button class="sizes-conveyors-width-add">
+              <svg
+                class="request-read-icon-rigth"
+                width="16"
+                height="16"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.75 0.75L8.29289 5.29289C8.68342 5.68342 8.68342 6.31658 8.29289 6.70711L3.75 11.25"
+                  stroke="#042A30"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="sizes-conveyors-options">
+        <select class="size-conveyors-select" name="Select options">
+          <option value="">Select options</option>
+          <option value="Chain Driven Feeder">Chain Driven Feeder</option>
+          <option value="Additional Support Structures">
+            Additional Support Structures
+          </option>
+          <option value="Knee Braces">Knee Braces</option>
+          <option value="Enhanced support">Enhanced support</option>
+        </select>
+      </div>
+      <div class="sizes-conveyors-add">
+        <form class="list">
+          <label class="sizes-conveyors-checkbox">
+            <input
+              class="sizes-conveyors-input"
+              type="checkbox"
+              name="add"
+              value="Chain Driven Feeder"
+            />
+            Chain Driven Feeder
+            <button class="sizes-conveyors-checkbox-info js-open-modal">
+              <svg class="sizes-conveyors-icon" width="16" height="16">
+                <use href="./image/icons.svg#icon-info_circle"></use>
+              </svg>
+            </button>
+          </label>
+          <label class="sizes-conveyors-checkbox">
+            <input
+              class="sizes-conveyors-input"
+              type="checkbox"
+              name="add"
+              value="Additional Support Structures"
+            />
+            Additional Support Structures
+            <button class="sizes-conveyors-checkbox-info js-open-modal">
+              <svg class="sizes-conveyors-icon" width="16" height="16">
+                <use href="./image/icons.svg#icon-info_circle"></use>
+              </svg>
+            </button>
+          </label>
+          <label class="sizes-conveyors-checkbox">
+            <input
+              class="sizes-conveyors-input"
+              type="checkbox"
+              name="add"
+              value="Knee Braces"
+            />
+            Knee Braces
+            <button class="sizes-conveyors-checkbox-info js-open-modal">
+              <svg class="sizes-conveyors-icon" width="16" height="16">
+                <use href="./image/icons.svg#icon-info_circle"></use>
+              </svg>
+            </button>
+          </label>
+          <label class="sizes-conveyors-checkbox">
+            <input
+              class="sizes-conveyors_input"
+              type="checkbox"
+              name="add"
+              value="Enhanced support"
+            />
+            Enhanced support
+            <button class="sizes-conveyors-checkbox-info js-open-modal">
+              <svg class="sizes-conveyors-icon" width="16" height="16">
+                <use href="./image/icons.svg#icon-info_circle"></use>
+              </svg>
+            </button>
+          </label>
+        </form>
+      </div>
+    </div>
+    <include src="./partials/request.html"></include>
+  </div>
 </section>

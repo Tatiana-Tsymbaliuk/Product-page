@@ -1,70 +1,189 @@
-  <!-- Container for the image gallery --> 
-       
+<!-- Container for the image gallery -->
 <div class="container-gallery">
   <h1 class="gallery-title">Incline & Decline Conveyors</h1>
   <div class="big-slide">
-    <button class="big-slide_zoom js-open-modal" data-modal="4">
-      <svg class="big-slide_icon" width="16" height="16">
-        <use href="./image/icons.svg#icon-Check"></use>
+    <button class="big-slide-zoom">
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.5 10.5V15.5M15.5 15.5H10.5M15.5 15.5L10.8125 10.8125"
+          stroke="black"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M0.5 10.5V15.5M0.5 15.5H5.5M0.5 15.5L5.1875 10.8125"
+          stroke="black"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M15.5 5.5V0.5M15.5 0.5H10.5M15.5 0.5L10.8125 5.1875"
+          stroke="black"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M0.5 5.5V0.5M0.5 0.5H5.5M0.5 0.5L5.1875 5.1875"
+          stroke="black"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
     </button>
-  <!-- Full-width images with number text -->
-  <div class="slides">
-    <div class="numbertext">1 / 5</div>
-      <img src="./image/image1.png" style="width:100%">
-  </div>
+    <!-- Full-width images with number text -->
+    <div class="slides">
+      <div class="numbertext">1 / 5</div>
+      <img src="./image/image1.jpeg" style="width: 100%" />
+    </div>
 
-  <div class="slides">
-    <div class="numbertext">2 / 5</div>
-      <img src="./image/image2.png" style="width:100%">
-  </div>
+    <div class="slides">
+      <div class="numbertext">2 / 5</div>
+      <img src="./image/image2.jpeg" style="width: 100%" />
+    </div>
 
-  <div class="slides">
-    <div class="numbertext">3 / 5</div>
-      <img src="./image/image3.png" style="width:100%">
-  </div>
+    <div class="slides">
+      <div class="numbertext">3 / 5</div>
+      <img src="./image/image3.jpeg" style="width: 100%" />
+    </div>
 
- <div class="slides">
-    <div class="numbertext">4 / 5</div>
-      <img src="./image/image4.png" style="width:100%">
-  </div>
+    <div class="slides">
+      <div class="numbertext">4 / 5</div>
+      <img src="./image/image4.jpeg" style="width: 100%" />
+    </div>
 
-  <div class="slides">
-    <div class="numbertext">5 / 5</div>
-      <img src="./image/image5.png" style="width:100%">
-  </div>
-</div>
-
-  <!-- Next and previous buttons -->
-  <button class="prev-slide" onclick="plusSlides(-1)">&#10094;</button>
-  <button class="next-slide" onclick="plusSlides(1)">&#10095;</button>
-
-  <!-- Image text -->
-  <div class="caption-container">
-    <p id="caption"></p>
+    <div class="slides">
+      <div class="numbertext">5 / 5</div>
+      <img src="./image/image5.jpeg" style="width: 100%" />
+    </div>
+    <!-- Next and previous buttons -->
+    <button class="previous-slide" onclick="plusSlides(-1)">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 1L4.70711 7.29289C4.31658 7.68342 4.31658 8.31658 4.70711 8.70711L11 15"
+          stroke="black"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <button class="next-slide" onclick="plusSlides(1)">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 12 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3.75 0.75L8.29289 5.29289C8.68342 5.68342 8.68342 6.31658 8.29289 6.70711L3.75 11.25"
+          stroke="#042A30"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
   </div>
 
   <!-- Thumbnail images -->
-<div>
-  <ul class="row">
-    <div><button class="prev-row" onclick="plusSlides(-1)">&#10094;</button></div>
-    <li class="list column">
-      <img class="demo cursor" src="./image/image1.png" style="width:100%" onclick="currentSlide(1)" alt="Picture shows conveyor with optional structures amd features">
-    </li>
-    <li class="list column">
-      <img class="demo cursor" src="./image/image2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-    </li>
-    <li class="list column">
-      <img class="demo cursor" src="./image/image3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </li>
-    <li class="list column">
-      <img class="demo cursor" src="./image/image4.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </li>
-    <li class="list column">
-      <img class="demo cursor" src="./image/image5.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </li>
-    <div><button class="next-row" onclick="plusSlides(1)">&#10095;</button></div>
-  </ul>
-</div> 
+  <div>
+    <ul class="row">
+      <div>
+        <button class="previous-row" onclick="plusSlides(-1)">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 1L4.70711 7.29289C4.31658 7.68342 4.31658 8.31658 4.70711 8.70711L11 15"
+              stroke="black"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <li class="list column">
+        <img
+          class="demo cursor"
+          src="./image/image1.png"
+          style="width: 100%"
+          onclick="currentSlide(1)"
+          alt="Picture shows conveyor with optional structures amd features"
+        />
+      </li>
+      <li class="list column">
+        <img
+          class="demo cursor"
+          src="./image/image2.png"
+          style="width: 100%"
+          onclick="currentSlide(2)"
+          alt="Cinque Terre"
+        />
+      </li>
+      <li class="list column">
+        <img
+          class="demo cursor"
+          src="./image/image3.png"
+          style="width: 100%"
+          onclick="currentSlide(3)"
+          alt="Mountains and fjords"
+        />
+      </li>
+      <li class="list column">
+        <img
+          class="demo cursor"
+          src="./image/image4.png"
+          style="width: 100%"
+          onclick="currentSlide(4)"
+          alt="Northern Lights"
+        />
+      </li>
+      <li class="list column">
+        <img
+          class="demo cursor"
+          src="./image/image5.png"
+          style="width: 100%"
+          onclick="currentSlide(5)"
+          alt="Nature and sunrise"
+        />
+      </li>
+      <div>
+        <button class="next-row" onclick="plusSlides(1)">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.75 0.75L8.29289 5.29289C8.68342 5.68342 8.68342 6.31658 8.29289 6.70711L3.75 11.25"
+              stroke="#042A30"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </ul>
+  </div>
 </div>
-     

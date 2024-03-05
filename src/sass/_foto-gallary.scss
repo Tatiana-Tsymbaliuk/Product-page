@@ -1,96 +1,106 @@
-
 * {
   box-sizing: border-box;
 }
+// Title text
 .gallery-title {
+  display: block;
   font-size: 32px;
   margin: 0px;
   margin-bottom: 24px;
-  @media screen and  (min-width: 361px) {
+  @media screen and (min-width: 1920px) {
     display: none;
   }
 }
-/* Position the image container (needed to position the left and right arrows) */
+// Conteiner for section
 .container-gallery {
   position: relative;
-  width: 652px;
-  top: 92px;
+  width: 320px;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (min-width: 1920px) {
     width: 100%;
-  
   }
-  
 }
-
-.big-slide{
+// Conteiner for big slides
+.big-slide {
   border: solid 1px rgb(212, 230, 231);
   border-radius: 8px;
   margin-bottom: 16px;
   position: relative;
 }
-
-.big-slide_zoom {
+// Button for zoom big slides
+.big-slide-zoom {
+  width: 44px;
+  height: 44px;
   position: absolute;
-        border: none;
-        // display: flex;
-        background-color: transparent;
-        cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  top: 3%;
+  left: 91%;
+  display: none;
+  padding: 14px;
+  background-color: rgb(242, 245, 245);
+  cursor: pointer;
+
+  @media screen and (min-width: 1920px) {
+    display: block;
+  }
 }
 
-/* Hide the images by default */
+// Hide the images by default
 .slides {
-  display: none; 
+  display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
+// Add a pointer when hovering over the thumbnail images
 .cursor {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
-.prev-slide,
+// Next & previous buttons for big slides
+.previous-slide,
 .next-slide {
   width: 44px;
   height: 44px;
   cursor: pointer;
   position: absolute;
-  top: 62%;
+  display: none;
+  bottom: 30px;
   border: none;
   margin-top: -75px;
-  background-color: rgb(242, 245, 245,);
+  background-color: rgb(242, 245, 245);
   color: rgb(12, 11, 11);
   padding: 11px 14px 11px 14px;
   border-radius: 8px;
   user-select: none;
   font-weight: 500;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  @media screen and (max-width: 360px) {
-    display: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1920px) {
+    display: block;
   }
 }
 
-/* Position the "next button" to the right */
+// Position the "next button" to the right
 .next-slide {
   right: 15px;
-  
 }
 
-.prev-slide {
- right: 71px;
-
+.previous-slide {
+  right: 71px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev-slide:hover,
+// On hover, different color for button
+.previous-slide:hover,
 .next-slide:hover {
   color: white;
   background-color: rgba(184, 187, 187, 0.8);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* Number text (1/3 etc) */
+// Number text
 .numbertext {
   font-weight: 500;
   color: #131111;
@@ -100,76 +110,78 @@
   top: 0;
 }
 
-/* Container for image text */
+// Container for image text
 .caption-container {
+  width: 155px;
   font-size: 10px;
   text-align: left;
   position: absolute;
-  top: 54%;
-  margin-left: 15px;
+  bottom: 5px;
+  margin-left: 5px;
   padding: 5px;
   color: rgb(174, 187, 191);
 
-  @media screen and (max-width: 360px) {
-    top: 68%;
+  @media screen and (min-width: 1920px) {
+    width: 100%;
+    margin-left: 15px;
+    bottom: 10px;
   }
-  
 }
 
 .row:after {
-  content: "";
-  display: flex;
-  clear: both;
+  @media screen and(min-width:1920px) {
+    content: '';
+    display: flex;
+    clear: both;
+  }
 }
 
 .row {
   display: flex;
   padding: 0;
+  gap: 8px;
 }
-
-.prev-row,
+// Next & previous buttons for small slides
+.previous-row,
 .next-row {
   width: 32px;
   height: 72px;
   cursor: pointer;
   border: none;
-  background-color: rgb(242, 245, 245,);
+  background-color: rgb(242, 245, 245);
   color: rgb(12, 11, 11);
   padding: 11px 14px 11px 14px;
   border-radius: 8px;
   user-select: none;
   font-weight: 500;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (max-width: 360px) {
-    display: none;
+  @media screen and (min-width: 1920px) {
+    display: block;
   }
 }
-.prev-row {
-  margin-right: 8px;
-}
-
-.prev-row:hover,
+// On hover, different color for button
+.previous-row:hover,
 .next-row:hover {
   color: white;
   background-color: rgba(184, 187, 187, 0.8);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-
-/* Six columns side by side */
+// five columns side by side
 .column {
   float: left;
   width: 108px;
-  height: 72px;
-  margin-right: 8px;
 }
 
-/* Add a transparency effect for thumnbail images */
+// Add a transparency effect for thumnbail images
 .demo {
   border: solid 1px rgb(212, 230, 231);
   border-radius: 8px;
-  
 }
 
 .active,

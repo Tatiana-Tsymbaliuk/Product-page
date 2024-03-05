@@ -1,139 +1,190 @@
 .request-conteiner {
-        width: 304px;
-        margin-left: 44px;
-        margin-top: 51px;
-        background: rgb(214, 220, 221);
-        padding: 20px;
-        border-radius: 8px;
-        @media screen and (max-width: 360px) {
-                width: 100%;
-                margin: 0;
-                margin-top: 40px;
-              }
+  width: 360px;
+  margin-left: -20px;
+  padding: 20px;
+  background: #f2f5f5;
+  border-radius: 8px;
+
+  @media screen and (min-width: 1920px) {
+    margin-left: 0px;
+    width: 304px;
+  }
 }
 .request-model {
-        font-weight: 900;
-        font-size: 16px;
-        text-transform: uppercase;
-        color:rgb(4, 42, 48);
-        margin-top: 0px;
-        margin-bottom: 12px;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgb(4, 42, 48);
+  margin-top: 0px;
+  margin-bottom: 12px;
 }
-.request-model_sku {
-        color: rgb(156, 160, 160);
-        margin-right: 5px;
+.request-model-sku {
+  color: rgb(156, 160, 160);
+  margin-right: 5px;
 }
 .request-button-group {
-
-        @media screen and (max-width: 360px) {
-                display: flex;
-              }
+  display: flex;
+  gap: 12px;
+  @media screen and(min-width: 1920px) {
+    display: block;
+    gap: inherit;
+  }
 }
 
-.request-upon_button {
-        font-weight: 900;
-        font-size: 10px;
-        text-transform: uppercase;
-        padding: 12px;
-        color: white;
-        background: rgb(4, 42, 48);
-        border-radius: 8px;
-        border: none;
-        margin-bottom: 12px;
-        cursor: pointer;
-        @media screen and (max-width: 360px) {
-                width: 125px;
-              }
+.request-upon-button {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 12px;
+  color: white;
+  background: rgb(4, 42, 48);
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 12px;
+  cursor: pointer;
+  width: 125px;
+  height: 32px;
 }
 
-.request-read_button {
-        font-weight: 900;
-        font-size: 14px;
-        text-transform: uppercase;
-        padding: 12px;
-        border-radius: 8px;
-        border: none;
-        background: rgb(236, 165, 134);
-        width: 264px;
-        margin-bottom: 34px;
-        cursor: pointer;
-        @media screen and (max-width: 360px) {
-                width: 183px;
-              }
-         
+.request-upon-icon {
+  margin-right: 4px;
 }
 
-.request-header {
-        border-bottom: 1px solid rgb(159, 153, 153);  
+.request-read-button {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #ffdfd7;
+  width: 183px;
+  height: 32px;
+  margin-bottom: 34px;
+  cursor: pointer;
+  @media screen and (min-width: 1920px) {
+    width: 264px;
+  }
 }
 
-.request-price{
-        font-weight: 900;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: rgb(20, 107, 135);
-        margin-top: 35px;
-        margin-bottom: 27px;
-              
+.request-read-icon {
+  margin-right: 2px;
+}
+
+.request-reviews {
+  color: #f1582b;
+  margin: 0;
+  width: 25px;
+  margin-right: 40px;
+}
+
+.request-read-text {
+  margin-right: 5px;
+  margin-left: 40px;
+  display: none;
+
+  @media screen and (min-width: 1920px) {
+    display: block;
+  }
+}
+
+.request-price {
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(20, 107, 135);
+  margin-top: 35px;
+  margin-bottom: 27px;
 }
 
 .request-price-from {
-        font-weight: 900;
-        font-size: 10px;
-        text-transform: uppercase; 
-        color:rgb(156, 160, 160);
-        margin-right: 8px;    
+  font-weight: 900;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgb(156, 160, 160);
+  margin-right: 8px;
 }
 
 .request-price-ea {
-        font-weight: 900;
-        font-size: 10px;
-        text-transform: uppercase; 
-        color:rgb(20, 107, 135); 
-        margin-left: 8px;     
+  font-weight: 900;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgb(20, 107, 135);
+  margin-left: 8px;
 }
 
 .request-counter {
-        margin-bottom: 24px;
-        width: 264px;
+  margin-bottom: 24px;
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  @media screen and (min-width: 1920px) {
+    gap: 16px;
+  }
 }
 
-.request-counter_data {
-padding: 12px 65px 12px 65px;
-border-radius: 8px;
-background-color: rgb(242, 245, 245,);
-border: solid 1px rgb(180, 185, 185);
-margin-left: 8px;
-margin-right: 8px;
+.request-counter-data {
+  width: 192px;
+  border-radius: 8px;
+  background-color: rgb(242, 245, 245);
+  border: solid 1px rgb(180, 185, 185);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 1920px) {
+    width: 144px;
+  }
 }
 
-.request-counter_button {
-        width: 44px;
-        height: 44px;
-        border-radius: 8px;
-        border: none;
-        background-color: rgb(242, 245, 245,);
-        cursor: pointer;
+.request-counter-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  border: solid 1px rgb(180, 185, 185);
+  background-color: rgb(242, 245, 245);
+  cursor: pointer;
+}
+
+.request-counter-button:hover {
+  background-color: #d6dcdd;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .request-button {
-        font-weight: 900;
-        font-size: 14px;
-        text-transform: uppercase;
-        padding: 12px;
-        border-radius: 8px;
-        border: none;
-        color: white;
-        background: rgb(228, 109, 58);
-        width: 264px; 
-        margin-bottom: 24px;
-        cursor: pointer;
-          
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background: #f1582b;
+  width: 264px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  @media screen and (max-width: 360px) {
+    width: 100%;
+  }
 }
 
-.request-price_final {
-        font-weight: 300;
-        font-size: 12px;
-        color:rgb(156, 160, 160);
-        margin: 0;
+.request-price-final {
+  font-weight: 300;
+  font-size: 12px;
+  color: rgb(156, 160, 160);
+  margin: 0;
+}
+.request-line {
+  width: 360px;
+  border-top: 1px solid #9f9999;
+  margin-left: -20px;
+  @media screen and (min-width: 1920px) {
+    width: 304px;
+  }
 }
